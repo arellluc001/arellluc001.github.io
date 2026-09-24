@@ -1,0 +1,26 @@
+/* Full-page background image styling with upper part focus */
+.full-page-image {
+    background-image: url('images/nyc.jpg'); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: top; /* Show more of the upper part of the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative;
+}
+
+/* Overlay text box styling */
+.overlay-text {
+    position: absolute;
+    font-size: 60px;
+    background-color: #9DB1E0;
+    bottom: 150px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    border-radius: 40px;
+    left: 445px;
+	display: none;
+}
