@@ -1,0 +1,38 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* no scrollbars for a clean full-screen look */
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    background: #000;
+}
+.viewer {
+position: relative; /* important: anchors the absolute-positioned children */
+height: 100vh; /* full viewport height */
+width: 100vw; /* full viewport width */
+}
+/* The image: covers the entire viewer */
+.viewer img {
+position: absolute;
+top:0;
+left:29%;
+trasform:translateX(-50%);
+
+height: 100%;
+width:auto;
+	
+object-fit: contain;
+}
+/* The caption: sits at the bottom, readable over the image */
+.viewer .description {
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%); /* shift back half of its own size */
+font-size: 2rem;
+padding: 1rem 1.5rem;
+color: #fff;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 1rem;
+}
