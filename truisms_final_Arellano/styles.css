@@ -1,0 +1,49 @@
+@charset "UTF-8";
+ /* Reset margin and padding */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Style for the body to cover the entire screen */
+body, html {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden; /* Disable scrolling */
+padding-botton:2%;
+}
+/* Full-screen video styling */
+.background-video {
+position: absolute; /* Allows positioning of video to cover the entire background */
+top: 0;
+left: 0;
+width: 100vw; /* Full width of the viewport */
+height: 100vh; /* Full height of the viewport */
+object-fit: cover; /* Ensures video covers the whole viewport without distortion */
+z-index: -1; /* Places video behind the text box */
+}
+/* Centered text box styling */
+/* Text box positioned in the lower third */
+.text-box {
+    position: absolute;
+
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: cornflowerblue;
+    color: black;
+    font-weight: bold;
+
+    width: fit-content;
+    height: auto;
+
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+
+    z-index: 2;
+}
